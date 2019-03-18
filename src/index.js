@@ -1,7 +1,7 @@
-import KtButton from './components/kt-button.vue'
+import HButton from './components/button.vue'
 
 const components = [
-  KtButton
+  HButton
 ]
 
 export default function (Vue) {

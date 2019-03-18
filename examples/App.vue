@@ -33,9 +33,6 @@
 </template>
 
 <script>
-// import hljs from 'highlight.js'
-// import 'highlight.js/styles/color-brewer.css'
-
 export default {
   name: 'App'
 }

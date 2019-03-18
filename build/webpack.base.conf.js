@@ -3,13 +3,13 @@ const path = require('path')
 const utils = require('./utils')
 const config = require('../config')
 const vueLoaderConfig = require('./vue-loader.conf')
-const markdownRender = require('markdown-it')();
+const markdownRender = require('markdown-it')()
 
 function resolve(dir) {
   return path.join(__dirname, '..', dir)
 }
 
-
+const isProd = process.env.NODE_ENV === 'production'
 
 module.exports = {
   context: path.resolve(__dirname, '../'),
@@ -63,6 +63,14 @@ module.exports = {
           limit: 10000,
           name: utils.assetsPath('fonts/[name].[hash:7].[ext]')
         }
+      },
+      {
+        test: /\.scss$/,
+        use: [
+          isProd ? MiniCssExtractPlugin.loader : 'style-loader',
+          'css-loader',
+          'sass-loader'
+        ]
       },
       {
         test: /\.md$/,
