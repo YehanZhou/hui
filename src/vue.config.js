@@ -35,7 +35,7 @@ module.exports = {
                   // 3.代码块包裹
                   return `
                     <k-example-code>
-                        <div class="source" slot="source">${code}</div>
+                        <div slot="source">${code}</div>
                          ${description}
                         <div class="highlight" slot="code">`
                 } else {

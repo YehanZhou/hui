@@ -1,6 +1,10 @@
+import HRow from './components/row.js'
+import HCol from './components/col.js'
 import HButton from './components/button.vue'
 
 const components = [
+  HRow,
+  HCol,
   HButton
 ]
 

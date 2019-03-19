@@ -5,9 +5,9 @@ Vue.use(Router)
 
 export default new Router({
   routes: [{
-      path: '/test',
-      name: 'test',
-      component: r => require.ensure([], () => r(require('../docs/test.md')))
+      path: '/layout',
+      name: 'layout',
+      component: r => require.ensure([], () => r(require('../docs/layout.md')))
     },
     {
       path: '/button',

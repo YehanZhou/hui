@@ -16,10 +16,10 @@
       <div class="main--left">
         <ul>
           <li>
-            <router-link to="/test">test 组件</router-link>
+            <router-link to="/layout">layout 布局</router-link>
           </li>
           <li>
-            <router-link to="/button">button 组件</router-link>
+            <router-link to="/button">button 按钮</router-link>
           </li>
         </ul>
       </div>

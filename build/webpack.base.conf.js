@@ -94,7 +94,7 @@ module.exports = {
                   let content = tokens[idx + 1].content;
                   // 3.使用自定义开发组件【DemoBlock】来包裹内容并且渲染成案例和代码示例
                   return `<demo-block>
-                  <div class="source" slot="source">${content}</div>
+                  <div slot="source">${content}</div>
                   ${descriptionHTML}
                   <div class="highlight" slot="highlight">`;
                 } else {

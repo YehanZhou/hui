@@ -6,6 +6,7 @@ import router from './router'
 import hljs from 'highlight.js'
 import DemoBlock from './components/demo-block.vue'
 import '../src/theme/index.scss'
+import './demo-styles/index.scss'
 import install from '../src/index'
 
 install(Vue)

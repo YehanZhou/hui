@@ -15,7 +15,7 @@ $--color-transition-base: color .2s cubic-bezier(.645,.045,.355,1) !default;
 /* Color
 -------------------------- */
 /// color|[主题色,primary color,color primario]|BrandColor|0
-$--color-primary: #409EFF !default;
+$--color-primary: #4598F0 !default;
 /// color|[基础白色,basic white,basic white]|BackgroundColor|4
 $--color-white: #FFFFFF !default;
 /// color|[基础黑色,basic black,basic black]|BackgroundColor|4
@@ -30,13 +30,13 @@ $--color-primary-light-7: mix($--color-white, $--color-primary, 70%) !default; /
 $--color-primary-light-8: mix($--color-white, $--color-primary, 80%) !default; /* d9ecff */
 $--color-primary-light-9: mix($--color-white, $--color-primary, 90%) !default; /* ecf5ff */
 /// color|[成功颜色,success color,success color]|SecondaryColor|1
-$--color-success: #67C23A !default;
+$--color-success: #49C98B !default;
 /// color|[警告颜色,warning color,warning color]|SecondaryColor|1
 $--color-warning: #E6A23C !default;
 /// color|[危险颜色,danger color,danger color]|SecondaryColor|1
-$--color-danger: #F56C6C !default;
+$--color-danger: #E95950 !default;
 /// color|[信息颜色,info color,info color]|SecondaryColor|1
-$--color-info: #909399 !default;
+$--color-info: #EFF2F6 !default;
 
 $--color-success-light: mix($--color-white, $--color-success, 80%) !default;
 $--color-warning-light: mix($--color-white, $--color-warning, 80%) !default;
