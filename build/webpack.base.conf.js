@@ -4,12 +4,12 @@ const utils = require('./utils')
 const config = require('../config')
 const vueLoaderConfig = require('./vue-loader.conf')
 const markdownRender = require('markdown-it')()
+// const MiniCssExtractPlugin = require('mini-css-extract-plugin')
+// const isProd = process.env.NODE_ENV === 'production'
 
 function resolve(dir) {
   return path.join(__dirname, '..', dir)
 }
-
-const isProd = process.env.NODE_ENV === 'production'
 
 module.exports = {
   context: path.resolve(__dirname, '../'),
@@ -67,7 +67,7 @@ module.exports = {
       {
         test: /\.scss$/,
         use: [
-          isProd ? MiniCssExtractPlugin.loader : 'style-loader',
+          'style-loader',
           'css-loader',
           'sass-loader'
         ]

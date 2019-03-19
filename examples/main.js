@@ -5,8 +5,8 @@ import App from './App'
 import router from './router'
 import hljs from 'highlight.js'
 import DemoBlock from './components/demo-block.vue'
-import install from '../src/index'
 import '../src/theme/index.scss'
+import install from '../src/index'
 
 install(Vue)
 
