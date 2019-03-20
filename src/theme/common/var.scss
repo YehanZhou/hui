@@ -36,7 +36,7 @@ $--color-warning: #E6A23C !default;
 /// color|[危险颜色,danger color,danger color]|SecondaryColor|1
 $--color-danger: #E95950 !default;
 /// color|[信息颜色,info color,info color]|SecondaryColor|1
-$--color-info: #EFF2F6 !default;
+$--color-info: #909399 !default;
 
 $--color-success-light: mix($--color-white, $--color-success, 80%) !default;
 $--color-warning-light: mix($--color-white, $--color-warning, 80%) !default;

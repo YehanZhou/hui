@@ -112,9 +112,7 @@
 
 ### 混合布局
 
-通过基础的 1/24 分栏任意扩展组合形成较为复杂的混合布局。
-
-:::demo test
+:::demo 通过基础的 1/24 分栏任意扩展组合形成较为复杂的混合布局。
 ```html
 <h-row :gutter="20">
   <h-col :span="16"><div class="grid-content bg-purple"></div></h-col>
@@ -277,9 +275,7 @@
 
 ### 响应式布局
 
-参照了 Bootstrap 的 响应式设计，预设了五个响应尺寸：`xs`、`sm`、`md`、`lg` 和 `xl`。
-
-:::demo test
+:::demo 参照了 Bootstrap 的 响应式设计，预设了五个响应尺寸：`xs`、`sm`、`md`、`lg` 和 `xl`。
 ```html
 <h-row :gutter="10">
   <h-col :xs="8" :sm="6" :md="4" :lg="3" :xl="1"><div class="grid-content bg-purple"></div></h-col>
@@ -314,7 +310,7 @@
 Element 额外提供了一系列类名，用于在某些条件下隐藏元素。这些类名可以添加在任何 DOM 元素或自定义组件上。如果需要，请自行引入以下文件：
 
 ```js
-import 'element-ui/lib/theme-chalk/display.css';
+import 'hui/lib/theme-chalk/display.css';
 ```
 
 包含的类名及其含义为：
