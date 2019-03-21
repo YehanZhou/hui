@@ -3,8 +3,8 @@
 
     <div class="main-header">
       <div class="main-header-logo">
-        <img src="./logo.png"
-          alt="logo">
+        <!-- <img src="./logo.png"
+          alt="logo"> -->
       </div>
       <div class="main-header-title">HUI</div>
       <ul class="main-header-nav">
@@ -14,17 +14,7 @@
 
     <div class="main-">
       <div class="main--left">
-        <ul>
-          <li>
-            <router-link to="/layout">layout 布局</router-link>
-          </li>
-          <li>
-            <router-link to="/icon">icon 图标</router-link>
-          </li>
-          <li>
-            <router-link to="/button">button 按钮</router-link>
-          </li>
-        </ul>
+       <side-nav></side-nav>
       </div>
       <div class="main--right">
         <router-view class="markdown"></router-view>
@@ -36,8 +26,13 @@
 </template>
 
 <script>
+import SideNav from './components/side-nav.vue'
+
 export default {
-  name: 'App'
+  name: 'App',
+  components: {
+    SideNav
+  }
 }
 </script>
 
@@ -48,9 +43,9 @@ body {
   font-family: Microsoft YaHei;
 }
 .router-link-active {
-  color: #41a259 !important;
-  background-color: #eeffde !important;
-  border-right: 3px solid #41a259 !important;
+  color: #4598F0 !important;
+  background-color: #ecf5fe !important;
+  border-right: 3px solid #4598F0 !important;
 }
 #app {
   overflow: hidden;
@@ -116,8 +111,8 @@ body {
     border-color 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
 #app .main-header .main-header-nav li.active {
-  color: #41a259;
-  border-bottom: 3px solid #41a259;
+  color: #4598F0;
+  border-bottom: 3px solid #4598F0;
 }
 #app .main- {
   position: relative;
@@ -136,67 +131,13 @@ body {
   -ms-flex: 0 0 auto;
   flex: 0 0 auto;
 }
-#app .main- .main--left ul {
-  width: 250px;
-  margin: 0;
-  padding: 0;
-}
-#app .main- .main--left ul li {
-  margin: 0;
-  list-style: none;
-  padding: 0;
-  font-size: 14px;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  cursor: pointer;
-}
-#app .main- .main--left ul li a {
-  font-size: 16px;
-  color: #333;
-  line-height: 40px;
-  height: 40px;
-  margin: 0;
-  padding: 4px 25px;
-  text-decoration: none;
-  display: block;
-  position: relative;
-  -webkit-transition: 0.15s ease-out;
-  transition: 0.15s ease-out;
-  font-weight: 700;
-  border-right: 1px solid #e8e8e8;
-}
-#app .main- .main--left ul li a:hover {
-  color: #41a259;
-}
-#app .main- .main--left ul li.main--link-group {
-  height: auto;
-}
-#app .main- .main--left ul li.main--link-group a:hover {
-  color: #333;
-  cursor: default;
-}
-#app .main- .main--left ul li.main--link-group ul a {
-  display: block;
-  height: 40px;
-  color: #444;
-  line-height: 40px;
-  font-size: 14px;
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  font-weight: 400;
-}
-#app .main- .main--left ul li.main--link-group ul a:hover {
-  color: #41a259;
-  cursor: pointer;
-}
 #app .main- .main--right {
   padding: 0 84px 140px 64px;
   min-height: 500px;
   overflow: hidden;
 }
 #app .main- .main--right a {
-  color: #41a259;
+  color: #4598F0;
   text-decoration: none;
 }
 .markdown h1 {
