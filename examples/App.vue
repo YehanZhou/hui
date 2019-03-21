@@ -19,6 +19,9 @@
             <router-link to="/layout">layout 布局</router-link>
           </li>
           <li>
+            <router-link to="/icon">icon 图标</router-link>
+          </li>
+          <li>
             <router-link to="/button">button 按钮</router-link>
           </li>
         </ul>
@@ -232,7 +235,7 @@ body {
   color: #5e6d82;
   line-height: 1.5em;
 }
-.markdown ul > li > p,
+/*.markdown ul > li > p,
 .markdown ol > li > p {
   margin: 0.2em 0;
 }
@@ -240,7 +243,7 @@ body {
   padding: 0;
   margin: 0;
 }
-.markdown ul > li {
+ .markdown ul > li {
   list-style-type: circle;
   margin-left: 20px;
   padding-left: 4px;
@@ -251,7 +254,7 @@ body {
   margin-left: 20px;
   padding-left: 4px;
   padding-top: 15px;
-}
+} */
 .markdown > table {
   border-collapse: collapse;
   border-spacing: 0;

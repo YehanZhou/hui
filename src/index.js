@@ -1,11 +1,13 @@
 import HRow from './components/row.js'
 import HCol from './components/col.js'
 import HButton from './components/button.vue'
+import HButtonGroup from './components/button-group.vue'
 
 const components = [
   HRow,
   HCol,
-  HButton
+  HButton,
+  HButtonGroup
 ]
 
 export default function (Vue) {
