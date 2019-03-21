@@ -114,8 +114,8 @@
     }
   }
   @include when(round) {
-    border-radius: 20px;
-    padding: 12px 23px;
+    border-radius: 15px;
+    padding: 7px 14px;
   }
   @include when(circle) {
     border-radius: 50%;
@@ -136,10 +136,10 @@
   @include m(info) {
     @include button-variant($--button-info-font-color, $--button-info-background-color, $--button-info-border-color);
   }
-  @include m(medium) {
-    @include button-size($--button-medium-padding-vertical, $--button-medium-padding-horizontal, $--button-medium-font-size, $--button-medium-border-radius);
+  @include m(large) {
+    @include button-size($--button-large-padding-vertical, $--button-large-padding-horizontal, $--button-large-font-size, $--button-large-border-radius);
     @include when(circle) {
-      padding: $--button-medium-padding-vertical;
+      padding: $--button-large-padding-vertical;
     }
   }
   @include m(small) {
@@ -210,7 +210,7 @@
       border-bottom-left-radius: $--button-border-radius;
 
       &.is-round {
-        border-radius: 20px;
+        border-radius: 15px;
       }
 
       &.is-circle {
