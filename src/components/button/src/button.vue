@@ -2,14 +2,14 @@
   <button
     class="h-button"
     @click="handleClick"
-    :disabled="buttonDisabled || loading"
+    :disabled="disabled || loading"
     :autofocus="autofocus"
     :type="nativeType"
     :class="[
       type ? 'h-button--' + type : '',
-      buttonSize ? 'h-button--' + buttonSize : '',
+      size ? 'h-button--' + size : '',
       {
-        'is-disabled': buttonDisabled,
+        'is-disabled': disabled,
         'is-loading': loading,
         'is-plain': plain,
         'is-round': round,
@@ -25,16 +25,6 @@
 <script>
   export default {
     name: 'HButton',
-
-    inject: {
-      elForm: {
-        default: ''
-      },
-      elFormItem: {
-        default: ''
-      }
-    },
-
     props: {
       type: {
         type: String,
@@ -56,19 +46,6 @@
       round: Boolean,
       circle: Boolean
     },
-
-    computed: {
-      _elFormItemSize() {
-        return (this.elFormItem || {}).elFormItemSize;
-      },
-      buttonSize() {
-        return this.size || this._elFormItemSize || (this.$ELEMENT || {}).size;
-      },
-      buttonDisabled() {
-        return this.disabled || (this.elForm || {}).disabled;
-      }
-    },
-
     methods: {
       handleClick(evt) {
         this.$emit('click', evt);
