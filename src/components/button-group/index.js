@@ -1,8 +1,8 @@
-import HButtonGroup from '../button/src/button-group'
+import ButtonGroup from '../button/src/button-group'
 
 /* istanbul ignore next */
-HButtonGroup.install = function(Vue) {
-  Vue.component(HButtonGroup.name, HButtonGroup)
+ButtonGroup.install = function(Vue) {
+  Vue.component(ButtonGroup.name, ButtonGroup)
 }
 
-export default HButtonGroup
+export default ButtonGroup

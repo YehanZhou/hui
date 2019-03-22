@@ -3,11 +3,11 @@
 </template>
 
 <script>
-  export default {
-    name: 'HIcon',
+export default {
+  name: 'HIcon',
 
-    props: {
-      name: String
-    }
-  };
+  props: {
+    name: String
+  }
+}
 </script>

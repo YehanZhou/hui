@@ -31,7 +31,7 @@ ul.icon-list {
 
   &::after {
     display: inline-block;
-    content: "";
+    content: '';
     height: 100%;
     vertical-align: middle;
   }
@@ -40,8 +40,8 @@ ul.icon-list {
     display: inline-block;
     line-height: normal;
     vertical-align: middle;
-    font-family: "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB",
-      "Microsoft YaHei", SimSun, sans-serif;
+    font-family: 'Helvetica Neue', Helvetica, 'PingFang SC', 'Hiragino Sans GB',
+      'Microsoft YaHei', SimSun, sans-serif;
     color: #99a9bf;
     transition: color 0.15s linear;
   }

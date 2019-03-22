@@ -1,40 +1,42 @@
 export default {
-    name: 'HRow',
-  
-    componentName: 'ElRow',
-  
-    props: {
-      tag: {
-        type: String,
-        default: 'div'
-      },
-      gutter: Number,
+  name: 'HRow',
+
+  componentName: 'ElRow',
+
+  props: {
+    tag: {
       type: String,
-      justify: {
-        type: String,
-        default: 'start'
-      },
-      align: {
-        type: String,
-        default: 'top'
-      }
+      default: 'div'
     },
-  
-    computed: {
-      style() {
-        const ret = {};
-  
-        if (this.gutter) {
-          ret.marginLeft = `-${this.gutter / 2}px`;
-          ret.marginRight = ret.marginLeft;
-        }
-  
-        return ret;
-      }
+    gutter: Number,
+    type: String,
+    justify: {
+      type: String,
+      default: 'start'
     },
-  
-    render(h) {
-      return h(this.tag, {
+    align: {
+      type: String,
+      default: 'top'
+    }
+  },
+
+  computed: {
+    style() {
+      const ret = {}
+
+      if (this.gutter) {
+        ret.marginLeft = `-${this.gutter / 2}px`
+        ret.marginRight = ret.marginLeft
+      }
+
+      return ret
+    }
+  },
+
+  render(h) {
+    return h(
+      this.tag,
+      {
         class: [
           'h-row',
           this.justify !== 'start' ? `is-justify-${this.justify}` : '',
@@ -42,7 +44,8 @@ export default {
           { 'h-row--flex': this.type === 'flex' }
         ],
         style: this.style
-      }, this.$slots.default);
-    }
-  };
-  
+      },
+      this.$slots.default
+    )
+  }
+}

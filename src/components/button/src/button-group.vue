@@ -4,7 +4,7 @@
   </div>
 </template>
 <script>
-  export default {
-    name: 'HButtonGroup'
-  };
+export default {
+  name: 'HButtonGroup'
+}
 </script>

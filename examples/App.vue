@@ -14,7 +14,7 @@
 
     <div class="main-">
       <div class="main--left">
-       <side-nav></side-nav>
+        <side-nav></side-nav>
       </div>
       <div class="main--right">
         <router-view class="markdown"></router-view>
@@ -42,9 +42,9 @@ body {
   font-family: Microsoft YaHei;
 }
 .router-link-active {
-  color: #4598F0 !important;
+  color: #4598f0 !important;
   background-color: #ecf5fe !important;
-  border-right: 3px solid #4598F0 !important;
+  border-right: 3px solid #4598f0 !important;
 }
 #app {
   overflow: hidden;
@@ -110,8 +110,8 @@ body {
     border-color 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
 #app .main-header .main-header-nav li.active {
-  color: #4598F0;
-  border-bottom: 3px solid #4598F0;
+  color: #4598f0;
+  border-bottom: 3px solid #4598f0;
 }
 #app .main- {
   position: relative;
@@ -136,7 +136,7 @@ body {
   overflow: hidden;
 }
 #app .main- .main--right a {
-  color: #4598F0;
+  color: #4598f0;
   text-decoration: none;
 }
 .markdown h1 {

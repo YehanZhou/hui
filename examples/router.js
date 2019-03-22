@@ -3,10 +3,11 @@ import Router from 'vue-router'
 
 Vue.use(Router)
 
-let defaultPath = '/layout';
+let defaultPath = '/layout'
 
 export default new Router({
-  routes: [{
+  routes: [
+    {
       path: '/',
       redirect: defaultPath
     },
@@ -14,6 +15,12 @@ export default new Router({
       path: '/layout',
       name: 'layout',
       component: r => require.ensure([], () => r(require('./docs/layout.md')))
+    },
+    {
+      path: '/container',
+      name: 'container',
+      component: r =>
+        require.ensure([], () => r(require('./docs/container.md')))
     },
     {
       path: '/color',

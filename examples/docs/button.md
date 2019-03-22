@@ -1,4 +1,5 @@
 ## Button 按钮
+
 常用的操作按钮。
 
 ### 基础用法
@@ -44,6 +45,7 @@
   <h-button type="danger" icon="h-icon-delete" circle></h-button>
 </h-row>
 ```
+
 :::
 
 ### 禁用状态
@@ -71,6 +73,7 @@
   <h-button type="danger" plain disabled>危险按钮</h-button>
 </h-row>
 ```
+
 :::
 
 ### 文字按钮
@@ -81,6 +84,7 @@
 <h-button type="text">文字按钮</h-button>
 <h-button type="text" disabled>文字按钮</h-button>
 ```
+
 :::
 
 ### 图标按钮
@@ -94,8 +98,11 @@
 <h-button type="primary" icon="h-icon-share"></h-button>
 <h-button type="primary" icon="h-icon-delete"></h-button>
 <h-button type="primary" icon="h-icon-search">搜索</h-button>
-<h-button type="primary">上传<i class="h-icon-upload h-icon--right"></i></h-button>
+<h-button type="primary"
+  >上传<i class="h-icon-upload h-icon--right"></i
+></h-button>
 ```
+
 :::
 
 ### 按钮组
@@ -107,7 +114,9 @@
 ```html
 <h-button-group>
   <h-button type="primary" icon="h-icon-arrow-left">上一页</h-button>
-  <h-button type="primary">下一页<i class="h-icon-arrow-right h-icon--right"></i></h-button>
+  <h-button type="primary"
+    >下一页<i class="h-icon-arrow-right h-icon--right"></i
+  ></h-button>
 </h-button-group>
 <h-button-group>
   <h-button type="primary" icon="h-icon-edit"></h-button>
@@ -115,6 +124,7 @@
   <h-button type="primary" icon="h-icon-delete"></h-button>
 </h-button-group>
 ```
+
 :::
 
 ### 加载中
@@ -126,6 +136,7 @@
 ```html
 <h-button type="primary" :loading="true">加载中</h-button>
 ```
+
 :::
 
 ### 不同尺寸
@@ -148,18 +159,20 @@ Button 组件提供除了默认值以外的三种尺寸，可以在不同场景�
   <h-button size="mini" round>超小按钮</h-button>
 </h-row>
 ```
+
 :::
 
 ### Attributes
-| 参数      | 说明    | 类型      | 可选值       | 默认值   |
-|---------- |-------- |---------- |-------------  |-------- |
-| size     | 尺寸   | string  |   large / small / mini            |    —     |
-| type     | 类型   | string    |   primary / success / warning / danger / info / text |     —    |
-| plain     | 是否朴素按钮   | boolean    | — | false   |
-| round     | 是否圆角按钮   | boolean    | — | false   |
-| circle     | 是否圆形按钮   | boolean    | — | false   |
-| loading     | 是否加载中状态   | boolean    | — | false   |
-| disabled  | 是否禁用状态    | boolean   | —   | false   |
-| icon  | 图标类名 | string   |  —  |  —  |
-| autofocus  | 是否默认聚焦 | boolean   |  —  |  false  |
-| native-type | 原生 type 属性 | string | button / submit / reset | button |
+
+| 参数        | 说明           | 类型    | 可选值                                             | 默认值 |
+| ----------- | -------------- | ------- | -------------------------------------------------- | ------ |
+| size        | 尺寸           | string  | large / small / mini                               | —      |
+| type        | 类型           | string  | primary / success / warning / danger / info / text | —      |
+| plain       | 是否朴素按钮   | boolean | —                                                  | false  |
+| round       | 是否圆角按钮   | boolean | —                                                  | false  |
+| circle      | 是否圆形按钮   | boolean | —                                                  | false  |
+| loading     | 是否加载中状态 | boolean | —                                                  | false  |
+| disabled    | 是否禁用状态   | boolean | —                                                  | false  |
+| icon        | 图标类名       | string  | —                                                  | —      |
+| autofocus   | 是否默认聚焦   | boolean | —                                                  | false  |
+| native-type | 原生 type 属性 | string  | button / submit / reset                            | button |

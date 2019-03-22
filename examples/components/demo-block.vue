@@ -4,30 +4,37 @@
       <slot name="source"></slot>
     </div>
     <div class="demo-block-meta">
-      <div class="description" v-if="$slots.default">
+      <div
+        class="description"
+        v-if="$slots.default"
+      >
         <slot></slot>
       </div>
       <span
         class="demo-block-code-icon"
-        @click="showCode=!showCode"><img alt="expand code"
+        @click="showCode=!showCode"
+      ><img
+          alt="expand code"
           src="https://gw.alipayobjects.com/zos/rmsportal/wSAkBuJFbdxsosKKpqyq.svg"
-          class="code-expand-icon-show"></span>
+          class="code-expand-icon-show"
+        ></span>
     </div>
-    <div class="demo-block-code"
-      v-show="showCode">
+    <div
+      class="demo-block-code"
+      v-show="showCode"
+    >
       <slot name="highlight"></slot>
     </div>
   </div>
 </template>
 <script type="text/babel">
-
 export default {
   data() {
     return {
       showCode: false
-    };
+    }
   }
-};
+}
 </script>
 <style>
 .demo-block {

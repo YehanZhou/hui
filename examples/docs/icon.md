@@ -5,13 +5,14 @@
 ### 使用方法
 
 :::demo 直接通过设置类名为 `h-icon-iconName` 来使用即可。例如：
+
 ```html
 <i class="h-icon-edit"></i>
 <i class="h-icon-share"></i>
 <i class="h-icon-delete"></i>
 <h-button type="primary" icon="h-icon-search">搜索</h-button>
-
 ```
+
 :::
 
 ### 图标集合

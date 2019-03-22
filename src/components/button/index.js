@@ -1,8 +1,8 @@
-import HButton from './src/button';
+import Button from './src/button'
 
 /* istanbul ignore next */
-HButton.install = function(Vue) {
-  Vue.component(HButton.name, HButton);
-};
+Button.install = function(Vue) {
+  Vue.component(Button.name, Button)
+}
 
-export default HButton;
+export default Button

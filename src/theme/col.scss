@@ -1,7 +1,7 @@
-@import "./common/var.scss";
-@import "./mixins/mixins.scss";
+@import './common/var.scss';
+@import './mixins/mixins.scss';
 
-[class*="h-col-"] {
+[class*='h-col-'] {
   float: left;
   box-sizing: border-box;
 }
