@@ -161,10 +161,10 @@
     }
 
     &::after {
-      width: 4px;
-      height: 4px;
+      width: 6px;
+      height: 6px;
       border-radius: $--radio-input-border-radius;
-      background-color: $--color-white;
+      background-color: $--color-primary;
       content: '';
       position: absolute;
       left: 50%;
