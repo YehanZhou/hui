@@ -8,6 +8,9 @@ import HFooter from './components/footer/index.js'
 import HIcon from './components/icon/index.js'
 import HButton from './components/button/index.js'
 import HButtonGroup from './components/button-group/index.js'
+import HRadio from './components/radio/index.js'
+import HRadioButton from './components/radio-button/index.js'
+import HRadioGroup from './components/radio-group/index.js'
 
 const components = [
   HRow,
@@ -19,7 +22,10 @@ const components = [
   HFooter,
   HIcon,
   HButton,
-  HButtonGroup
+  HButtonGroup,
+  HRadio,
+  HRadioButton,
+  HRadioGroup
 ]
 
 export default function(Vue) {

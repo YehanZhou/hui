@@ -28,6 +28,12 @@ export default new Router({
       component: r => require.ensure([], () => r(require('./docs/color.md')))
     },
     {
+      path: '/typography',
+      name: 'typography',
+      component: r =>
+        require.ensure([], () => r(require('./docs/typography.md')))
+    },
+    {
       path: '/icon',
       name: 'icon',
       component: r => require.ensure([], () => r(require('./docs/icon.md')))
@@ -36,6 +42,11 @@ export default new Router({
       path: '/button',
       name: 'button',
       component: r => require.ensure([], () => r(require('./docs/button.md')))
+    },
+    {
+      path: '/radio',
+      name: 'radio',
+      component: r => require.ensure([], () => r(require('./docs/radio.md')))
     },
     {
       path: '*',

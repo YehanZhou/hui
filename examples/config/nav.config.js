@@ -26,10 +26,10 @@ const navs = {
               path: '/typography',
               title: 'Typography 字体'
             },
-            {
-              path: '/border',
-              title: 'Border 边框'
-            },
+            // {
+            //   path: '/border',
+            //   title: 'Border 边框'
+            // },
             {
               path: '/icon',
               title: 'Icon 图标'
@@ -37,6 +37,15 @@ const navs = {
             {
               path: '/button',
               title: 'Button 按钮'
+            }
+          ]
+        },
+        {
+          groupName: 'Form',
+          list: [
+            {
+              path: '/radio',
+              title: 'Radio 单选框'
             }
           ]
         }
