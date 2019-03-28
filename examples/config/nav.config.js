@@ -46,6 +46,10 @@ const navs = {
             {
               path: '/radio',
               title: 'Radio 单选框'
+            },
+            {
+              path: '/checkbox',
+              title: 'Checkbox 多选框'
             }
           ]
         }
