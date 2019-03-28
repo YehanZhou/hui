@@ -252,7 +252,7 @@ body {
   background: #ebedf0;
   clear: both;
 }
-.markdown code {
+/* .markdown code {
   font-family: Microsoft YaHei;
   margin: 0 1px;
   background: #f2f4f5;
@@ -260,5 +260,17 @@ body {
   border-radius: 3px;
   font-size: 0.9em;
   border: 1px solid #eee;
+} */
+
+.hljs {
+  line-height: 1.8;
+  font-family: Menlo, Monaco, Consolas, Courier, monospace;
+  font-size: 12px;
+  padding: 18px 24px;
+  background-color: #fafafa;
+  border: solid 1px #eaeefb;
+  margin-bottom: 25px;
+  border-radius: 4px;
+  -webkit-font-smoothing: auto;
 }
 </style>
