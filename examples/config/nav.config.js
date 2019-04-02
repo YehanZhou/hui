@@ -50,10 +50,6 @@ const navs = {
             {
               path: '/checkbox',
               title: 'Checkbox 多选框'
-            },
-            {
-              path: '/input',
-              title: 'Input 输入框'
             }
           ]
         }

@@ -61,7 +61,7 @@
   </label>
 </template>
 <script>
-import Emitter from 'hui/mixins/emitter'
+import Emitter from '../../../mixins/emitter'
 
 export default {
   name: 'HCheckbox',

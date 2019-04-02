@@ -14,7 +14,6 @@ import HRadioGroup from './components/radio-group/index.js'
 import HCheckbox from './components/checkbox/index.js'
 import HCheckboxButton from './components/checkbox-button/index.js'
 import HCheckboxGroup from './components/checkbox-group/index.js'
-import HInput from './components/input/index.js'
 
 const components = [
   HRow,
@@ -32,8 +31,7 @@ const components = [
   HRadioGroup,
   HCheckbox,
   HCheckboxButton,
-  HCheckboxGroup,
-  HInput
+  HCheckboxGroup
 ]
 
 export default function(Vue) {

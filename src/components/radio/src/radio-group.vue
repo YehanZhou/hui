@@ -8,7 +8,7 @@
   </div>
 </template>
 <script>
-import Emitter from 'hui/mixins/emitter'
+import Emitter from '../../../mixins/emitter'
 
 const keyCode = Object.freeze({
   LEFT: 37,

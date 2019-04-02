@@ -14,26 +14,23 @@ function resolve(dir) {
 module.exports = {
   context: path.resolve(__dirname, '../'),
   entry: {
-    app: './examples/main.js'
+    app: './examples/main.js',
   },
   output: {
     path: config.build.assetsRoot,
     filename: '[name].js',
-    publicPath:
-      process.env.NODE_ENV === 'production'
-        ? config.build.assetsPublicPath
-        : config.dev.assetsPublicPath
+    publicPath: process.env.NODE_ENV === 'production' ?
+      config.build.assetsPublicPath : config.dev.assetsPublicPath
   },
   resolve: {
     extensions: ['.js', '.vue', '.json'],
     alias: {
-      vue$: 'vue/dist/vue.esm.js',
-      hui: resolve('src')
+      'vue$': 'vue/dist/vue.esm.js',
+      '@': resolve('src'),
     }
   },
   module: {
-    rules: [
-      {
+    rules: [{
         test: /\.vue$/,
         loader: 'vue-loader',
         options: vueLoaderConfig
@@ -69,58 +66,44 @@ module.exports = {
       },
       {
         test: /\.scss$/,
-        use: ['style-loader', 'css-loader', 'sass-loader']
+        use: [
+          'style-loader',
+          'css-loader',
+          'sass-loader'
+        ]
       },
-      // {
-      //   test: /\.md$/,
-      //   loader: 'vue-markdown-loader',
-      //   options: {
-      //     preventExtract: true,
-      //     use: [
-      //       [
-      //         require('markdown-it-container'),
-      //         'demo',
-      //         {
-      //           validate: function(params) {
-      //             return params.trim().match(/^demo\s+(.*)$/)
-      //           },
-
-      //           render: function(tokens, idx) {
-      //             const m = tokens[idx].info.trim().match(/^demo\s*(.*)$/)
-      //             if (tokens[idx].nesting === 1) {
-      //               // 1.获取第一行的内容使用markdown渲染html作为组件的描述
-      //               const description = m && m.length > 1 ? m[1] : ''
-      //               // 2.获取代码块内的html和js代码
-      //               let content = tokens[idx + 1].content
-      //               // 3.使用自定义开发组件【DemoBlock】来包裹内容并且渲染成案例和代码示例
-      //               return `<demo-block>
-      //             <div slot="source">${content}</div>
-      //             <div>${markdownRender.render(description)}</div>
-      //             <div slot="highlight">`
-      //             } else {
-      //               return '</div></demo-block>\n'
-      //             }
-      //           }
-      //         }
-      //       ]
-      //     ]
-      //   }
-      // }
       {
         test: /\.md$/,
-        use: [
-          {
-            loader: 'vue-loader',
-            options: {
-              compilerOptions: {
-                preserveWhitespace: false
+        loader: 'vue-markdown-loader',
+        options: {
+          preventExtract: true,
+          use: [
+            [require('markdown-it-container'), 'demo', {
+
+              validate: function (params) {
+                return params.trim().match(/^demo\s+(.*)$/);
+              },
+
+              render: function (tokens, idx) {
+                const m = tokens[idx].info.trim().match(/^demo\s*(.*)$/);
+                if (tokens[idx].nesting === 1) {
+                  // 1.获取第一行的内容使用markdown渲染html作为组件的描述
+                  const description = m && m.length > 1 ? m[1] : '';
+                  // 2.获取代码块内的html和js代码
+                  let content = tokens[idx + 1].content;
+                  // 3.使用自定义开发组件【DemoBlock】来包裹内容并且渲染成案例和代码示例
+                  return `<demo-block>
+                  <div slot="source">${content}</div>
+                  <div>${markdownRender.render(description)}</div>
+                  <div slot="highlight">`;
+                } else {
+                  return '</div></demo-block>\n';
+                }
               }
-            }
-          },
-          {
-            loader: path.resolve(__dirname, './md-loader/index.js')
-          }
-        ]
+            }]
+          ]
+
+        }
       }
     ]
   },
@@ -137,3 +120,5 @@ module.exports = {
     child_process: 'empty'
   }
 }
+
+

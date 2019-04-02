@@ -54,11 +54,6 @@ export default new Router({
       component: r => require.ensure([], () => r(require('./docs/checkbox.md')))
     },
     {
-      path: '/input',
-      name: 'input',
-      component: r => require.ensure([], () => r(require('./docs/input.md')))
-    },
-    {
       path: '*',
       redirect: defaultPath
     }
